@@ -1,20 +1,15 @@
-
 @media only screen and (max-width:1190px){
-	#home{
-		background-size: 1150px !important;
-		
-	}
+	
 	.name{
-		left: 10%;
+		left: 40%;
 		top: 50%;
-		transform: translate(-10%,-50%);
+		transform: translate(-40%,-50%);
 	}
-	.name p, .name h1{
-		color: #FFFFFF;
-	}
+	
 	.about-model img{
 		height:400px;
 	}
+	
 	#services{
 		height:auto;
 	}
@@ -25,6 +20,15 @@
 		flex-grow: 1;
 	}
 	.s-box img{
+		object-fit:cover;
+	}
+	.c-container{
+		flex-wrap: wrap;
+	}
+	.c-box{
+		flex-grow: 1;
+	}
+	.c-box img{
 		object-fit:cover;
 	}
 	#contact form{
@@ -40,6 +44,9 @@
 	#home{
 		background-image: none !important;
 		
+	}
+	.name p, .name h1{
+		color: #FFFFFF;
 	}
 	.name{
 		left: 50%;
@@ -65,24 +72,25 @@
 	
 	}
 
+	.c-box h3{
+		text-align:center;
+		margin-left: 0px;
+	}
+	.cv-btn{
+		margin-right: 0px;
+	}
 	
+	.c-box p{
+		text-align:justify;
+		margin-right: 0px;
+	}
 }
 @media only screen and (max-width:900px){
-	/*.toggle{
-			display:block;
-		}
-		.toggle:before{
-	content:'\f0c9';
-	font-family: fontAwesome;
-	line-height: 0px;
-			margin-left:-30px;
-}
-		.toggle.active:before{
-	content:'\f00d' !important;
-	
-		}*/
+
 	.navbar nav{
-		padding:10px 30px;
+		padding:20px;
+		padding-left: 30px;
+		padding-right: 10px;
 	}
 	
 	.navbar ul{
@@ -198,6 +206,8 @@
 	}
 	.name{
 		width:60%;
+		text-align:center;
+		float: left;
 	}
 	.menu a{
 		display: none;

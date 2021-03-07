@@ -1,5 +1,5 @@
 import React, { Component } from 'react'
-import './nav.css';
+
 
 export default class Nav extends Component {
     render() {
@@ -11,7 +11,7 @@ export default class Nav extends Component {
                         <a href="#" className="logo">Louis Chan</a>
                         <div className="dropdown">
                             <button className="dropbtn" >
-                  <i className="fa fa-caret-down" aria-hidden="true"/>
+
                             </button>
                             <div className="dropdown-content">
                                 <li><a href="#" className="active" data-scroll-nav={0}>Home</a></li>

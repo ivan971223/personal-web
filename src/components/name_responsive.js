@@ -1,7 +1,7 @@
 import React from 'react'
 import { useMediaQuery } from 'react-responsive'
 
-export default function GalleryResp (){
+export default function NameResponsive (){
     const isDesktopOrLaptop = useMediaQuery({
       query: '(min-device-width: 1224px)'
     })
@@ -13,19 +13,16 @@ export default function GalleryResp (){
     const isPortrait = useMediaQuery({ query: '(orientation: portrait)' })
     const isRetina = useMediaQuery({ query: '(min-resolution: 2dppx)' })
     
-    let p_container={};
+    let myname="";
+
+    if(isTabletOrMobile){
+      myname = "Louis Chan"
+    }
+    else{
+      myname = "Chan Tsz Leung"
+    }
 
     return (
-      <div>
-        <h1>Device Test!</h1>
-        {isDesktopOrLaptop && <>
-          <p>You are a desktop or laptop</p>
-          {isBigScreen && <p>You also have a huge screen</p>}
-          {isTabletOrMobile && <p>You are sized like a tablet or mobile phone though</p>}
-        </>}
-        {isTabletOrMobileDevice && <p>You are a tablet or mobile phone</p>}
-        <p>Your are in {isPortrait ? 'portrait' : 'landscape'} orientation</p>
-        {isRetina && <p>You are retina</p>}
-      </div>
-    )
-  }
+       <div>{myname}</div>
+    );
+  };

@@ -63,6 +63,7 @@ a{
     transition: all ease 0.4s;
 }
 .dropdown {
+	
 	visibility: hidden;
 	float: right;
   }
@@ -83,12 +84,16 @@ a{
   }
   /* Dropdown content (hidden by default) */
 .dropdown-content {
-	display: none;
-	position: absolute;
-	background-color: #f9f9f9;
-	min-width: 160px;
-	box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
-	z-index: 1;
+	list-style-type: none;
+	right: 0;
+	float: right;
+	margin-top: 20px;
+	  display: none;
+	  position: absolute;
+	  background-color: #f9f9f9;
+	  min-width: 160px;
+	  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+	  z-index: 1;
   }
   
   /* Links inside the dropdown */
@@ -129,18 +134,23 @@ a{
     letter-spacing: 3px;
     color: #000000;
 }
+
 .cv-btn{
     width: 200px;
     height: 45px;
+	margin-top: 20px;
+	margin-right: 50px;
+	margin-bottom: 50px;
     display: flex;
     justify-content: center;
     align-items: center;
     background-color: #292929;
     color: #FFFFFF;
 	font-family: 'Jura', sans-serif;
+	
 }
 .cv-btn:hover{
-    background-color: #131313;
+    background-color: #17d1ac;
     transition: all ease 0.5s;
 }
 .social{
@@ -163,7 +173,7 @@ a{
 
 #about{
 	width:100%;
-	height:100vh;
+	height:auto;
 	box-sizing: border-box;
 	font-family: 'Quicksand', sans-serif;
 	display: flex;
@@ -171,26 +181,72 @@ a{
 	align-items: center;
 	justify-content: center;
 	background-color: #ffffff;
+	padding: 40px;
 }
-.profile{
-	margin-left: 300px;
-	margin-right: 300px;
+.myface{
+	width: 100%;
+	height:100%;
+	display: block;
+	margin-left: auto;
+	margin-right: auto;
+	border-radius: 20%;
 }
+
 .profile h2{
 	font-family: 'Orbitron', sans-serif;
 	width: 100%;
 	height: auto;
 	text-align:center;
+	margin-top: 100px;
+	margin-bottom: 50px;
 	font-size: 30px;
 	color: #074996;
+}
+.profile h3{
+	width: 100%;
+	height: auto;
+	text-align:center;
 }
 .profile p{
 	font-family: 'Quicksand', sans-serif;
 	width: 100%;
+	padding: 10px;
+	margin-right: 50px;
 	height: auto;
 	color: #1E1E1E;
 	line-height: 1.5;	
+	text-align:justify;
 }
+.c-container{
+	display: flex;
+	justify-content: center;
+	align-content: center;
+}
+.c-box{
+	width:  300px;
+	height: 400px;
+	margin: 20px;
+	border-radius: 10px;
+	overflow:visible;
+	position: relative;
+}
+.c-content{
+	font-family: 'Quicksand', sans-serif;
+	position: absolute;
+	left: 0;
+	top: 0;
+	width: 100%;
+	height: 100%;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	flex-direction: column;
+}
+.c-box h3{
+	margin-left: 50px;
+	text-align:left;
+}
+
 #project{
 width:100%;
 height:auto;
@@ -408,6 +464,7 @@ table .company{
 	grid-template-columns:1fr 1fr 1fr;
 	grid-template-rows: auto auto;
 	grid-gap: 10px;
+	padding-bottom: 50px;
 }
 .p-box .overlay-text{
 	font-family: 'Quicksand', sans-serif;
@@ -424,7 +481,7 @@ table .company{
 	display:none;
 	
 }
-.p-box .overlay-text h1,p{
+.p-box .overlay-text h1{
 	color: #FFFFFF;
 	text-align:center;
 }
