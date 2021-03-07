@@ -1,0 +1,55 @@
+#resume{
+	width:100%;
+	height:auto;
+	box-sizing: border-box;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+	background-color: #ffffff;
+	padding: 40px;
+	padding-bottom: 160px;
+}
+.resume-table{
+	margin-left: 50px;
+	margin-right: 50px;
+}
+#resume h2{
+	font-family: 'Orbitron', sans-serif;
+	font-size: 30px;
+	color: #074996;
+	margin-top: 60px;
+	margin-bottom: 80px;
+}
+table {
+	font-family: arial, sans-serif;
+	border-collapse: collapse;
+	width: 100%;
+	margin: 20px 0px;
+  }
+  
+td{
+	text-align: left;
+	padding: 10px;
+	font-family: 'Quicksand', sans-serif;
+  } 
+th {
+	border: none;
+	text-align: left;
+	padding: 10px;
+	font-size: 20px;
+	font-family: 'Quicksand', sans-serif;
+  }
+  
+tr:nth-child(even) {
+	background-color: #FFFFFF;
+}
+table .post{
+	padding-top: 0px;
+	padding-bottom: 2px;
+}
+table .company{
+	color: #6c707c;
+	padding-top: 0px;
+	padding-bottom: 10px;
+}

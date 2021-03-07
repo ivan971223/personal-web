@@ -1,0 +1,49 @@
+#about{
+	width:100%;
+	height:100vh;
+	box-sizing: border-box;
+	font-family: 'Quicksand', sans-serif;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+	background-color: #ffffff;
+}
+.profile{
+	margin-left: 300px;
+	margin-right: 300px;
+}
+.profile h2{
+	font-family: 'Orbitron', sans-serif;
+	width: 100%;
+	height: auto;
+	text-align:center;
+	font-size: 30px;
+	color: #074996;
+}
+.profile p{
+	font-family: 'Quicksand', sans-serif;
+	width: 100%;
+	height: auto;
+	color: #1E1E1E;
+	line-height: 1.5;	
+}
+.center{
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+.cv-btn{
+    width: 200px;
+    height: 45px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #292929;
+    color: #FFFFFF;
+	font-family: 'Jura', sans-serif;
+}
+.cv-btn:hover{
+    background-color: #131313;
+    transition: all ease 0.5s;
+}
